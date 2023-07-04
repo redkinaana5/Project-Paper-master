@@ -1,0 +1,13 @@
+@import "../style/_templates";
+@import "../style/header/style_header";
+@import "../style/header__menu/menu";
+@import "../style/main__simplethings/style_simplethings";
+@import "../style/main__maxwhite/style_maxwhite";
+@import "../style/main__products/style_products";
+@import "../style/main__partners/style_partners";
+@import "../style/main__sketchbook/style_sketchbook";
+@import "../style/footer/style_footer";
+
+// можно импорты подключать через запятую, но чтобы нагляднее каждый сделан отдельно
+// файлы scss для разделов имеют нижнее подчеркивание перед названием. это нужно, чтобы препроцессор не создавал файлы css и css.map для каждого элемента. чтобы увидеть, как выглядит ваш код в css, нужно зайти в общий файл style.css
+// media вынесены отдельным файлом, а не добавлены к каждой секции, так как применяются правила подпключенного последним файла стиля.

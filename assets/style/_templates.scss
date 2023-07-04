@@ -1,0 +1,47 @@
+// чтобы подключить template в свой style, первой строкой в style.scss указать "@import "./templates";" без кавычек
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+// переменные цветов
+$accent: #7875FE;
+$text-color: #85859B;
+$title-color: #666666;
+$logo-color:#333;
+$light: #FFFFFF;
+$text-color-light: #B5B5BD; //в продуктах
+$medium: #EBEBEB; // в лого и макс белизне
+$dark: #4C5866; // в футере, заголовок "простые вещи" и пункты меню
+
+//переменные размеров
+$desktop: 1440px;
+$tablet1: 768px;
+$tablet2: 578px;
+$mobile: 320px;
+
+// этот стиль подойдет для заголовков (для заголовков разных уровней отдельные классы с другим font-size)
+.title {
+    color: $title-color;
+    font-family: 'Roboto';
+    line-height: 100%;
+}
+
+// этот стиль подойдет для основного текста (в  "простых вещах" и "результат вашего обучения" нужен будет отдельный Line height:150%)
+.text {
+    color: $text-color;
+    font-family: 'Roboto';
+    line-height: 170%;
+    @media screen and (min-width:$tablet1){
+        font-size: 18px;
+    }
+    @media screen and (max-width:$tablet1){
+        font-size: 16px;
+    }
+}

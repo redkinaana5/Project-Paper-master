@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="./assets/style/normalize.css" rel="stylesheet" />
+  <link href="./assets/style/style.css" rel="stylesheet" />
+  <!-- комментарии перед сдачей удалить! -->
+</head>
+
+<body>
+  <header class="header">
+    <!-- Для бургер меню -->
+    <div class="menu">
+      <input type="checkbox" id="burger" />
+      <label for="burger"></label>
+      <nav>
+        <ul>
+          <!-- теги в <a> переводят на нужное место на странице - где указано id="#"-->
+          <li><a href="#products" class="title menu__title">Продукция</a></li>
+          <li>
+            <a href="#materials" class="title menu__title">Материалы</a>
+          </li>
+          <li><a href="#about" class="title menu__title">О нас</a></li>
+          <li><a href="#contacts" class="title menu__title">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__simplethings" id="about">
+      <!-- main__simplethings -->
+    </div>
+
+    <!-- <div class="main__maxwhite" id="materials"> -->
+    <!-- main__maxwhite -->
+    <div class="main__maxwhite grey">
+      <div class="maxwhite__contayner">
+        <div class="result">
+          <div class="result__contayner">
+            <div class="result__inner">
+              <img class="result__line-img" src="./assets/img/main__maxwhite/Rectangle.png" alt="image line">
+              <div class="result__content">
+                <img class="result__img" src="./assets/img/main__maxwhite/Buissnes_Cards_v2.png"
+                  alt="image Buissnes Cards">
+                <div class="result__title title">V.1
+                  <p class="result__text text">Результат вашего обучения
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="result__inner">
+              <img class="result__line-img" src="./assets/img/main__maxwhite/Rectangle.png" alt="image line">
+              <div class="result__content">
+                <img class="result__img" src="./assets/img/main__maxwhite/Buissnes_Cards_v5.png"
+                  alt="image Buissnes Cards">
+                <div class="result__title title">V.1
+                  <p class="result__text text">Результат вашего обучения
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="result__inner">
+              <img class="result__line-img" src="./assets/img/main__maxwhite/Rectangle.png" alt="image line">
+              <div class="result__content">
+                <img class="result__img" src="./assets/img/main__maxwhite/Buissnes_Cards_v6.png"
+                  alt="image Buissnes Cards">
+                <div class="result__title title">V.1
+                  <p class="result__text text">Результат вашего обучения
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="maxwhite__title-content">
+          <div class="title-content__contayner">
+            <img class="title-content__img" src="./assets/img/main__maxwhite/box_title.png" alt="image paper box">
+            <div class="title-content__text">
+              <h2 class="title-content title">Максимальная белизна</h2>
+              <p class="title-content__desc text">Для повышения белизны, гладкости и мягкости в состав бумажной
+                массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта операция называется
+                наполнением.
+              </p><br>
+              <p class="title-content__desc text">
+                Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой
+                является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- конец части maxwhite -->
+
+
+    </div>
+    <div class="main__products" id="products">
+      <div class="card">
+        <picture>
+          <source media="(max-width: 1440px) and (min-width: 769px)"
+            srcset="./assets/img/main__products/package_t1.png">
+          <source media="(max-width: 768px) and (min-width: 577px)" srcset="./assets/img/main__products/package_t2.png">
+          <source media="(max-width: 576px)" srcset="./assets/img/main__products/package_m.png">
+          <img src="./assets/img/main__products/package.png" alt="package" class="img__card">
+        </picture>
+        <h3 class="title card__title">Упаковка</h3>
+        <!-- стиль этого заголовка такой же, как у "максимальной белизны" и "simple скетчбук", им нужен общий класс (.title в templates)-->
+        <p class="card__subtitle">Тираж: от 50 штук</p>
+        <p class="text card__text">
+          <!-- стиль текста в этом параграфе такой же, как в "простых вещах" и "максимальной белизне", им нужен общий класс (.text в templates)-->
+          Сделано из крафт-бумаги или плотного картона. Упаковки имеют
+          различные формы и расцветки, изготовим форму под заказ.
+        </p>
+        <a href="#" target="_blank" class="card__more">Подробнее →</a>
+      </div>
+      <div class="card">
+        <picture>
+          <source media="(max-width: 1110px) and (min-width: 769px)" srcset="./assets/img/main__products/bags_t1.png">
+          <source media="(max-width: 768px) and (min-width: 579px)" srcset="./assets/img/main__products/bags_t2.png">
+          <source media="(max-width: 578px)" srcset="./assets/img/main__products/bags_m.png">
+          <img src="./assets/img/main__products/bags.png" alt="bags" class="img__card">
+        </picture>
+        <h3 class="card__title title">Пакеты</h3>
+        <p class="card__subtitle">Тираж: от 200 штук</p>
+        <p class="card__text text">
+          С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
+          картон, крафт-бумага. Различные расцветки и дизайн.
+        </p>
+        <a href="#" target="_blank" class="card__more">Подробнее →</a>
+      </div>
+      <div class="card">
+        <picture>
+          <source media="(max-width: 1110px) and (min-width: 769px)" srcset="./assets/img/main__products/cases_t1.png">
+          <source media="(max-width: 768px) and (min-width: 579px)" srcset="./assets/img/main__products/cases_t2.png">
+          <source media="(max-width: 578px)" srcset="./assets/img/main__products/cases_m.png">
+          <img src="./assets/img/main__products/cases.png" alt="cases" class="img__card">
+        </picture>
+        <h3 class="card__title title">Кейсы</h3>
+        <p class="card__subtitle">Тираж: от 30 штук</p>
+        <p class="card__text text">
+          Подойдет для документов и других бумаг. Различные расцветки, размеры
+          и плотность. Материал: прессованная бумага.
+        </p>
+        <a href="#" target="_blank" class="card__more">Подробнее →</a>
+      </div>
+      <div class="card">
+        <picture>
+          <source media="(max-width: 1110px) and (min-width: 769px)" srcset="./assets/img/main__products/other_t1.png">
+          <source media="(max-width: 768px) and (min-width: 579px)" srcset="./assets/img/main__products/other_t2.png">
+          <source media="(max-width: 578px)" srcset="./assets/img/main__products/other_m.png">
+          <img src="./assets/img/main__products/other.png" alt="other" class="img__card">
+        </picture>
+        <h3 class="card__title title">Другие изделия</h3>
+        <p class="card__subtitle">Тираж: от 100 штук</p>
+        <p class="card__text text">
+          Нестандартные упаковки, кейсы и другие изделия различных размеров
+          и конфигураций. Изготовим в кратчайшие сроки.
+        </p>
+        <a href="#" target="_blank" class="card__more">Подробнее →</a>
+      </div>
+    </div>
+    <div class="main__partners">
+      <!-- main__partners (переименовала, чтобы не путать с Logo как логотип)-->
+    </div>
+    <div class="main__sketchbook">
+      <!-- main__sketchbook -->
+    </div>
+  </main>
+  <footer class="footer" id="contacts">
+  </footer>
+</body>
+
+</html>
