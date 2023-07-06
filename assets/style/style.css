@@ -158,6 +158,12 @@ nav ul a {
     background-color: rgb(235, 235, 235);
   }
 }
+@media (max-width: 576px) {
+  .grey {
+    max-width: 576px;
+    width: 100%;
+  }
+}
 
 .main__maxwhite .maxwhite__contayner {
   max-width: 1110px;
@@ -173,12 +179,22 @@ nav ul a {
   .main__maxwhite .maxwhite__contayner {
     max-width: 768px;
     width: 100%;
-    margin-left: 39px;
-    margin-right: 39px;
+    padding-left: 39px;
+    padding-right: 39px;
     padding-top: 30px;
   }
-  .main__maxwhite .maxwhite__contayner .result__line-img {
-    width: 210px;
+}
+@media (max-width: 576px) {
+  .main__maxwhite .maxwhite__contayner {
+    max-width: 510px;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .main__maxwhite .maxwhite__contayner {
+    max-width: 290px;
+    width: 100%;
+    padding-left: 15px;
   }
 }
 .main__maxwhite .maxwhite__contayner .result__contayner {
@@ -195,14 +211,44 @@ nav ul a {
 }
 @media (max-width: 768px) {
   .main__maxwhite .maxwhite__contayner .result__contayner {
-    max-width: 690px;
-    min-height: 216px;
+    gap: 30px;
+  }
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__line-img {
+    width: 210px;
+  }
+}
+@media (max-width: 320px) {
+  .main__maxwhite .maxwhite__contayner .result__contayner {
+    max-width: 290px;
+    flex-direction: column;
   }
 }
 .main__maxwhite .maxwhite__contayner .result__contayner .result__inner {
-  max-width: 210px;
-  min-height: 219px;
-  width: 100%;
+  max-width: 352px;
+}
+@media (max-width: 768px) {
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__inner {
+    max-width: 207px;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__inner {
+    max-width: 150px;
+    width: 100%;
+  }
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__inner .result__line-img {
+    width: 150px;
+  }
+}
+@media (max-width: 320px) {
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__inner {
+    max-width: 290px;
+    width: 100%;
+  }
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__inner .result__line-img {
+    width: 260px;
+  }
 }
 .main__maxwhite .maxwhite__contayner .result__contayner .result__inner .result__content {
   display: flex;
@@ -216,6 +262,16 @@ nav ul a {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 15px;
+    gap: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__inner .result__content {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main__maxwhite .maxwhite__contayner .result__contayner .result__inner .result__content .result__img {
+    max-width: 130px;
   }
 }
 .main__maxwhite .maxwhite__contayner .title-content__contayner {
@@ -242,6 +298,26 @@ nav ul a {
     min-height: 431px;
   }
 }
+@media (max-width: 576px) {
+  .main__maxwhite .maxwhite__contayner .title-content__contayner {
+    flex-direction: column;
+  }
+  .main__maxwhite .maxwhite__contayner .title-content__contayner .title-content__text {
+    max-width: 510px;
+    min-height: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .main__maxwhite .maxwhite__contayner .title-content__contayner {
+    max-width: 290px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .main__maxwhite .maxwhite__contayner .title-content__contayner .title-content__img {
+    max-width: 290px;
+    min-height: 223px;
+  }
+}
 .main__maxwhite .maxwhite__contayner .title-content__contayner .title-content {
   font-size: 40px;
   font-family: Roboto;
@@ -255,6 +331,11 @@ nav ul a {
     font-size: 30px;
   }
 }
+@media (max-width: 320px) {
+  .main__maxwhite .maxwhite__contayner .title-content__contayner .title-content {
+    font-size: 24px;
+  }
+}
 .main__maxwhite .maxwhite__contayner .title-content__contayner .title-content .title-content__desc {
   max-width: 350px;
   font-size: 18px;
@@ -266,6 +347,11 @@ nav ul a {
 @media (max-width: 768px) {
   .main__maxwhite .maxwhite__contayner .title-content__contayner .title-content .title-content__desc {
     font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .main__maxwhite .maxwhite__contayner .title-content__contayner .title-content .title-content__desc {
+    font-size: 16px;
   }
 }
 
